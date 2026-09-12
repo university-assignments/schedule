@@ -1,200 +1,3722 @@
 [
-	{
-		"beginTime": "08:00:00",
-		"endTime": "09:35:00",
-		"subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-01",
-		"instructors": [
-			{ "name": "Цуканов Александр Сергеевич", "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6", "location": "611/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "09:45:00",
-		"endTime": "11:20:00",
-		"subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-01",
-		"instructors": [
-			{ "name": "Цуканов Александр Сергеевич", "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6", "location": "611/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "11:30:00",
-		"endTime": "13:05:00",
-		"subject": "Защита информации от утечки по техническим каналам",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-01",
-		"instructors": [
-			{ "name": "Соколов Александр Николаевич", "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e", "location": "615/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "13:35:00",
-		"endTime": "15:10:00",
-		"subject": "Безопасность систем баз данных",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-01",
-		"instructors": [
-			{ "name": "Баринов Андрей Евгеньевич", "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e", "location": "615/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "11:30:00",
-		"endTime": "13:05:00",
-		"subject": "Организационное и правовое обеспечение информационной безопасности",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-02",
-		"instructors": [
-			{ "name": "Бердюгин Владимир Юрьевич", "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e", "location": "615/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "13:35:00",
-		"endTime": "15:10:00",
-		"subject": "Организационное и правовое обеспечение информационной безопасности",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-02",
-		"instructors": [
-			{ "name": "Бердюгин Владимир Юрьевич", "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6", "location": "611/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "15:20:00",
-		"endTime": "16:55:00",
-		"subject": "Методы и средства криптографической защиты информации",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-02",
-		"instructors": [
-			{ "name": "Зюляркина Наталья Дмитриевна", "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337", "location": "609/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "17:05:00",
-		"endTime": "18:40:00",
-		"subject": "Методы и средства криптографической защиты информации",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-02",
-		"instructors": [
-			{ "name": "Зюляркина Наталья Дмитриевна", "roomId": "82554278-d6e6-90a5-a82e-73a2db745740", "location": "632/3б" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "08:00:00",
-		"endTime": "17:00:00",
-		"subject": "День военной подготовки",
-		"eventType": "Внеучебные мероприятия",
-		"eventDate": "2026-09-03",
-		"instructors": [
-			{ "name": "-", "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0", "location": "-/10М" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "08:00:00",
-		"endTime": "09:35:00",
-		"subject": "Безопасность жизнедеятельности",
-		"eventType": "Лабораторные занятия",
-		"eventDate": "2026-09-04",
-		"instructors": [
-			{ "name": "Глотова Наталья Владимировна", "roomId": "7bac9900-e434-4949-b626-69236bf0290c", "location": "517/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "09:45:00",
-		"endTime": "11:20:00",
-		"subject": "Защита информации от утечки по техническим каналам",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-04",
-		"instructors": [
-			{ "name": "Соколов Александр Николаевич", "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337", "location": "609/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "11:30:00",
-		"endTime": "13:05:00",
-		"subject": "Экономика и управление на предприятии",
-		"eventType": "Практические занятия и семинары",
-		"eventDate": "2026-09-04",
-		"instructors": [
-			{ "name": "Лелекова Светлана Юрьевна", "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337", "location": "330/3б" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "09:45:00",
-		"endTime": "11:20:00",
-		"subject": "Методы и средства криптографической защиты информации",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-05",
-		"instructors": [
-			{ "name": "Зюляркина Наталья Дмитриевна", "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6", "location": "611/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "11:30:00",
-		"endTime": "13:05:00",
-		"subject": "Программно-аппаратные средства защиты информации",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-05",
-		"instructors": [
-			{ "name": "Мищенко Евгений Юрьевич", "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e", "location": "615/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "13:35:00",
-		"endTime": "15:10:00",
-		"subject": "Программно-аппаратные средства защиты информации",
-		"eventType": "Лабораторные занятия",
-		"eventDate": "2026-09-05",
-		"instructors": [
-			{ "name": "Мищенко Евгений Юрьевич", "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6", "location": "611/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "09:45:00",
-		"endTime": "11:20:00",
-		"subject": "Безопасность жизнедеятельности",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-07",
-		"instructors": [
-			{ "name": "Глотова Наталья Владимировна", "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da", "location": "205/3г" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "11:30:00",
-		"endTime": "13:05:00",
-		"subject": "Экономика и управление на предприятии",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-07",
-		"instructors": [
-			{ "name": "Лелекова Светлана Юрьевна", "roomId": "fc363b44-6b64-d32c-6d68-f92bdffef19e", "location": "265/3" }
-		],
-		"isAllowedToOpen": false
-	},
-	{
-		"beginTime": "13:35:00",
-		"endTime": "15:10:00",
-		"subject": "Экология",
-		"eventType": "Лекции",
-		"eventDate": "2026-09-07",
-		"instructors": [
-			{ "name": "Юдина Екатерина Петровна", "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26", "location": "624/3" }
-		],
-		"isAllowedToOpen": false
-	}
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-01",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-01",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-01",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-01",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-02",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-02",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-02",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "17:05:00",
+        "endTime": "18:40:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-02",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "82554278-d6e6-90a5-a82e-73a2db745740",
+                "location": "632/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-09-03",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-04",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-04",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-04",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-05",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-05",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-05",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-07",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-07",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "fc363b44-6b64-d32c-6d68-f92bdffef19e",
+                "location": "265/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-07",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-08",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-08",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-08",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-08",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-09",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-09",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-09",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-09-10",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-11",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-11",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-12",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-14",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-14",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-14",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-15",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-15",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-15",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-15",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-16",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-16",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-16",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-09-17",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-18",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-18",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-18",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-19",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-19",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-19",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-21",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-21",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-21",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-22",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-22",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-22",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-22",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-23",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-23",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-23",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-09-24",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-09-25",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-25",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-26",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-28",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-28",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-28",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-29",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-29",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-29",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-29",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-09-30",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-30",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-09-30",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-10-01",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-02",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-02",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-02",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-03",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-03",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-03",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-05",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-05",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-05",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-06",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-06",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-06",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-06",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-07",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-07",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-07",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-10-08",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-09",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-09",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-10",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-12",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-12",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-12",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-13",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-13",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-13",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-13",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-14",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-14",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-14",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-10-15",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-16",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-16",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-16",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-17",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-17",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-17",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-19",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-19",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-19",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-20",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-20",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-20",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-20",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-21",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-21",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-21",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-10-22",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-23",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-23",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-24",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-26",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-26",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-26",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-27",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-27",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-27",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-27",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-28",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-28",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-28",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-10-29",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-30",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-30",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-10-30",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-31",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-10-31",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-10-31",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-02",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-02",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-02",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-03",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-03",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-03",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-03",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-11-05",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-06",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-06",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-07",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-09",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-09",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-09",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-10",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-10",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-10",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-10",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-11",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-11",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-11",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-11-12",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-13",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-13",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-13",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-14",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-14",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-14",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-16",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-16",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-16",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-17",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-17",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-17",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-17",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-18",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-18",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-18",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-11-19",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-20",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-20",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-21",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-23",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-23",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-23",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-24",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-24",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-24",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-24",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-25",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-25",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-25",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-11-26",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-27",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-27",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-11-27",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-28",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-28",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-11-28",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-30",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-30",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-11-30",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-01",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-01",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-01",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-01",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-02",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-02",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-02",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-12-03",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-04",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-04",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-05",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-07",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-07",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-07",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-08",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Практикум по решению эксплуатационных задач профессиональной деятельности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-08",
+        "instructors": [
+            {
+                "name": "Цуканов Александр Сергеевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-08",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-08",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-09",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-09",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-09",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-12-10",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-11",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-11",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-11",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "76f41cb8-3f51-b15a-ad26-0bc15fc0f337",
+                "location": "330/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-12",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-12",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-14",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-14",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-14",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b96cb004-ea3a-d66f-fd81-729c01c5fe26",
+                "location": "624/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-15",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-15",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-15",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Безопасность систем баз данных",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-15",
+        "instructors": [
+            {
+                "name": "Баринов Андрей Евгеньевич",
+                "roomId": "36905cb1-5bac-3836-0d47-d9996c65d782",
+                "location": "626/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-16",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-16",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-16",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "17:00:00",
+        "subject": "День военной подготовки",
+        "eventType": "Внеучебные мероприятия",
+        "eventDate": "2026-12-17",
+        "instructors": [
+            {
+                "name": "-",
+                "roomId": "dc57de3d-2e82-4fc9-ac04-82c470fc3cd0",
+                "location": "-/10М"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "08:00:00",
+        "endTime": "09:35:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лабораторные занятия",
+        "eventDate": "2026-12-18",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "7bac9900-e434-4949-b626-69236bf0290c",
+                "location": "517/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Защита информации от утечки по техническим каналам",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-18",
+        "instructors": [
+            {
+                "name": "Соколов Александр Николаевич",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Программно-аппаратные средства защиты информации",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-19",
+        "instructors": [
+            {
+                "name": "Мищенко Евгений Юрьевич",
+                "roomId": "11fd4c8e-57a1-8286-0c19-22e5df647f4e",
+                "location": "615/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "09:45:00",
+        "endTime": "11:20:00",
+        "subject": "Безопасность жизнедеятельности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-21",
+        "instructors": [
+            {
+                "name": "Глотова Наталья Владимировна",
+                "roomId": "4fa7b65e-a54c-acaf-c0d8-d6936ca711da",
+                "location": "205/3г"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Экономика и управление на предприятии",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-21",
+        "instructors": [
+            {
+                "name": "Лелекова Светлана Юрьевна",
+                "roomId": "4b4c0b23-acd8-54e1-9673-8810c0432c3f",
+                "location": "524/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Экология",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-21",
+        "instructors": [
+            {
+                "name": "Юдина Екатерина Петровна",
+                "roomId": "b3cdd9a6-2b9a-08e3-750c-45f264ff7053",
+                "location": "527/3б"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "11:30:00",
+        "endTime": "13:05:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Лекции",
+        "eventDate": "2026-12-23",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "13:35:00",
+        "endTime": "15:10:00",
+        "subject": "Организационное и правовое обеспечение информационной безопасности",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-23",
+        "instructors": [
+            {
+                "name": "Бердюгин Владимир Юрьевич",
+                "roomId": "a84bdd3f-770a-1b7c-8636-ec3ca7459ee6",
+                "location": "611/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    },
+    {
+        "beginTime": "15:20:00",
+        "endTime": "16:55:00",
+        "subject": "Методы и средства криптографической защиты информации",
+        "eventType": "Практические занятия и семинары",
+        "eventDate": "2026-12-23",
+        "instructors": [
+            {
+                "name": "Зюляркина Наталья Дмитриевна",
+                "roomId": "f901c123-dd73-3f36-0f9b-acf12e099337",
+                "location": "609/3"
+            }
+        ],
+        "isAllowedToOpen": false
+    }
 ]

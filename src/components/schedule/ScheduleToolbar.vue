@@ -5,6 +5,7 @@ import SearchField from '@/components/ui/SearchField.vue';
 import ToggleSwitch from '@/components/ui/ToggleSwitch.vue';
 import TeacherFilter from '@/components/schedule/TeacherFilter.vue';
 import ColumnMenu from '@/components/schedule/ColumnMenu.vue';
+import PeriodNav from '@/components/schedule/PeriodNav.vue';
 import { emptyFilters, isDefaultFilters, PERIOD_LABELS, type FilterState, type Period } from '@/lib/filters';
 import { KIND_LABELS, type LessonKind } from '@/lib/lesson';
 
@@ -41,9 +42,16 @@ function toggleKind (kind: LessonKind): void
 	};
 }
 
+/* Точку отсчёта при смене периода сохраняем: человек смотрел октябрь и переключился на
+   «Месяц» — он ждёт октябрь целиком, а не прыжка в текущий месяц. */
 function setPeriod (period: Period): void
 {
 	filters.value = { ...filters.value, period };
+}
+
+function setAnchor (anchor: string): void
+{
+	filters.value = { ...filters.value, anchor };
 }
 
 const searchModel = computed({
@@ -73,27 +81,36 @@ const onlyMineModel = computed({
 
 <template>
 	<div class="flex flex-col gap-2">
+		<!-- Первая строка — про «когда»: листалка и размер окна. Фильтры «что показывать»
+		     идут ниже: смешивать перемещение по времени с отбором значит заставлять
+		     каждый раз выискивать стрелки среди семи одинаковых кнопок. -->
+		<div class="flex flex-wrap items-center gap-2">
+			<PeriodNav :period="filters.period" :anchor="filters.anchor" @update:anchor="setAnchor" />
+
+			<div class="ml-auto flex items-center gap-2">
+				<!-- Период — сегментированный переключатель: вариантов четыре, они
+				     взаимоисключающие, и один из них выбран всегда. -->
+				<div class="flex gap-0.5 rounded-lg bg-line-soft p-0.5">
+					<button
+						v-for="period in PERIODS"
+						:key="period"
+						type="button"
+						class="rounded-md px-2.5 py-1.5 text-[13px] whitespace-nowrap transition-colors"
+						:class="filters.period === period ? 'bg-surface text-text shadow-[var(--shadow)]' : 'text-slate hover:text-body'"
+						@click="setPeriod(period)"
+					>
+						{{ PERIOD_LABELS[period] }}
+					</button>
+				</div>
+
+				<ColumnMenu v-if="props.showColumns" />
+			</div>
+		</div>
+
 		<div class="flex flex-wrap items-center gap-2">
 			<SearchField v-model="searchModel" placeholder="Предмет, преподаватель, аудитория" />
 
 			<TeacherFilter v-model="teachersModel" :teachers="props.teachers" />
-
-			<!-- Период — сегментированный переключатель: вариантов четыре, они
-			     взаимоисключающие, и один из них выбран всегда. -->
-			<div class="flex gap-0.5 rounded-lg bg-line-soft p-0.5">
-				<button
-					v-for="period in PERIODS"
-					:key="period"
-					type="button"
-					class="rounded-md px-2.5 py-1.5 text-[13px] whitespace-nowrap transition-colors"
-					:class="filters.period === period ? 'bg-surface text-text shadow-[var(--shadow)]' : 'text-slate hover:text-body'"
-					@click="setPeriod(period)"
-				>
-					{{ PERIOD_LABELS[period] }}
-				</button>
-			</div>
-
-			<ColumnMenu v-if="props.showColumns" />
 		</div>
 
 		<div class="flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -125,7 +142,7 @@ const onlyMineModel = computed({
 				v-if="dirty"
 				type="button"
 				class="ml-auto text-[12px] text-slate underline-offset-2 transition-colors hover:text-body hover:underline"
-				@click="filters = emptyFilters()"
+				@click="filters = emptyFilters(filters.anchor)"
 			>
 				Сбросить фильтры
 			</button>

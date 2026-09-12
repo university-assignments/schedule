@@ -1,5 +1,16 @@
 import type { Lesson, LessonKind } from '@/lib/lesson';
-import { endOfMonth, endOfWeek, startOfMonth, startOfWeek, today } from '@/lib/date';
+import {
+	addDays,
+	addMonths,
+	addWeeks,
+	endOfMonth,
+	endOfWeek,
+	formatMonth,
+	formatRange,
+	startOfMonth,
+	startOfWeek,
+	today,
+} from '@/lib/date';
 
 /*
  * Фильтрация живёт отдельным чистым модулем, а не внутри TanStack Table.
@@ -21,15 +32,30 @@ export interface FilterState
 	teachers: string[];
 	kinds: LessonKind[];
 	period: Period;
+	/**
+	 * Дата, от которой считается период. Не «выбранный день», а точка отсчёта: стрелки
+	 * «‹ ›» двигают именно её, и по ней же вычисляются границы недели или месяца.
+	 *
+	 * Отдельно от period, потому что переключение «Неделя → Месяц» не должно возвращать
+	 * человека в текущий месяц: он смотрел октябрь — пусть увидит октябрь целиком.
+	 */
+	anchor: string;
 	/** Показывать только предметы, отмеченные в «Мои пары». */
 	onlyMine: boolean;
 }
 
-export function emptyFilters (): FilterState
+export function emptyFilters (anchor: string = today()): FilterState
 {
-	return { search: '', teachers: [], kinds: [], period: 'week', onlyMine: false };
+	return { search: '', teachers: [], kinds: [], period: 'week', anchor, onlyMine: false };
 }
 
+/*
+ * Точка отсчёта в «нетронутость» фильтров НЕ входит.
+ *
+ * У даты свой орган управления — стрелки и кнопка «Сегодня», — и складывать их с
+ * «Сбросить фильтры» значит предлагать человеку сбросить то, что он и не настраивал:
+ * перелистнул неделю — и уже появилась кнопка сброса, будто он что-то отфильтровал.
+ */
 export function isDefaultFilters (state: FilterState): boolean
 {
 	return state.search === ''
@@ -45,19 +71,54 @@ export interface PeriodRange
 	to: string;
 }
 
-export function periodRange (period: Period, from = today()): PeriodRange | null
+export function periodRange (period: Period, anchor: string): PeriodRange | null
 {
 	switch (period)
 	{
 		case 'week':
-			return { from: startOfWeek(from), to: endOfWeek(from) };
+			return { from: startOfWeek(anchor), to: endOfWeek(anchor) };
 		case 'next':
-			return { from: startOfWeek(from), to: endOfWeek(addDays(from, 7)) };
+			return { from: startOfWeek(anchor), to: endOfWeek(addDays(anchor, 7)) };
 		case 'month':
-			return { from: startOfMonth(from), to: endOfMonth(from) };
+			return { from: startOfMonth(anchor), to: endOfMonth(anchor) };
 		case 'all':
 			return null;
 	}
+}
+
+/** Шаг стрелок «‹ ›» — ровно та единица, которой меряется текущий период. */
+export function shiftAnchor (period: Period, anchor: string, direction: -1 | 1): string
+{
+	switch (period)
+	{
+		case 'week':
+			return addWeeks(anchor, direction);
+		case 'next':
+			return addWeeks(anchor, direction * 2);
+		case 'month':
+			return addMonths(anchor, direction);
+		case 'all':
+			return anchor;
+	}
+}
+
+/** Подпись между стрелками: «7–13 сент.», «Сентябрь». */
+export function rangeLabel (period: Period, anchor: string): string
+{
+	if (period === 'month') return formatMonth(anchor);
+
+	const range = periodRange(period, anchor);
+	return range ? formatRange(range.from, range.to) : '';
+}
+
+/** Попадает ли сегодняшний день в показанный период — по этому прячется «Сегодня». */
+export function coversToday (period: Period, anchor: string): boolean
+{
+	const range = periodRange(period, anchor);
+	if (!range) return true;
+
+	const now = today();
+	return range.from <= now && now <= range.to;
 }
 
 export const PERIOD_LABELS: Record<Period, string> = {
@@ -78,7 +139,7 @@ export const PERIOD_LABELS: Record<Period, string> = {
 export function applyFilters (lessons: Lesson[], state: FilterState, mySubjects: string[]): Lesson[]
 {
 	const needle = state.search.trim().toLowerCase();
-	const range = periodRange(state.period);
+	const range = periodRange(state.period, state.anchor);
 	const mine = new Set(mySubjects);
 
 	return lessons.filter((lesson) =>
@@ -110,11 +171,4 @@ function matches (lesson: Lesson, needle: string): boolean
 		|| lesson.kindLabel.toLowerCase().includes(needle)
 		|| lesson.teachers.some((name) => name.toLowerCase().includes(needle))
 		|| lesson.rooms.some((room) => room.toLowerCase().includes(needle));
-}
-
-function addDays (date: string, count: number): string
-{
-	const value = new Date(`${date}T00:00:00`);
-	value.setDate(value.getDate() + count);
-	return value.toISOString().slice(0, 10);
 }

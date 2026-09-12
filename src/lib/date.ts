@@ -83,6 +83,40 @@ export function addWeeks (date: string, count: number): string
 		format('YYYY-MM-DD');
 }
 
+export function addMonths (date: string, count: number): string
+{
+	return dayjs(date).add(count, 'month').
+		format('YYYY-MM-DD');
+}
+
+export function addDays (date: string, count: number): string
+{
+	return dayjs(date).add(count, 'day').
+		format('YYYY-MM-DD');
+}
+
+/**
+ * Подпись диапазона для переключателя недель: «7–13 сент.», «28 сент. – 4 окт.».
+ *
+ * Месяц у левой границы печатается, только когда он отличается от правой: в «7 сент. –
+ * 13 сент.» второе «сент.» ничего не добавляет, а строка перестаёт помещаться в кнопку
+ * на телефоне.
+ */
+export function formatRange (from: string, to: string): string
+{
+	const start = dayjs(from);
+	const end = dayjs(to);
+
+	if (start.isSame(end, 'month')) return `${start.format('D')}–${end.format('D MMM')}`;
+	return `${start.format('D MMM')} – ${end.format('D MMM')}`;
+}
+
+/** «Сентябрь» — подпись месяца для того же переключателя. */
+export function formatMonth (date: string): string
+{
+	return capitalize(dayjs(date).format('MMMM'));
+}
+
 export function endOfWeek (date: string): string
 {
 	return dayjs(date).endOf('isoWeek').

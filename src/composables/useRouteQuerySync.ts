@@ -1,15 +1,17 @@
-import { ref, watch, type Ref } from 'vue';
+import { onMounted, onUnmounted, ref, watch, type Ref } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
 
 import { emptyFilters, type FilterState, type Period } from '@/lib/filters';
+import { recallAnchor, rememberAnchor } from '@/lib/lastView';
+import { today } from '@/lib/date';
 import type { LessonKind } from '@/lib/lesson';
 
 /*
  * Фильтры живут в адресной строке, а не только в памяти компонента.
  *
  * Смысл ровно один: ссылкой можно поделиться. «Вот что у нас на этой неделе у Соколова» —
- * это /#/schedule?group=my&teacher=Соколов…&period=week, и адресат видит то же самое, а
- * не пустую таблицу, которую ему ещё предстоит настроить.
+ * это /#/schedule?group=my&teacher=Соколов…&date=2026-11-02, и адресат видит то же самое,
+ * а не пустую таблицу, которую ему ещё предстоит настроить.
  *
  * Побочно решается и кнопка «назад»: закрыв фильтр, человек возвращается к прошлому виду,
  * а не улетает со страницы.
@@ -18,12 +20,14 @@ import type { LessonKind } from '@/lib/lesson';
 const PERIODS: Period[] = [ 'week', 'next', 'month', 'all' ];
 const KINDS: LessonKind[] = [ 'lecture', 'practice', 'lab', 'exam', 'other' ];
 
+const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
 export function useFilterQuerySync (): Ref<FilterState>
 {
 	const route = useRoute();
 	const router = useRouter();
 
-	const filters = ref<FilterState>(fromQuery(route.query));
+	const filters = ref<FilterState>(initialState(route.query));
 
 	/*
 	 * Две стороны синхронизации гасят друг друга сравнением сериализованного вида.
@@ -36,8 +40,19 @@ export function useFilterQuerySync (): Ref<FilterState>
 		if (serialize(next) !== serialize(filters.value)) filters.value = next;
 	});
 
+	/*
+	 * immediate обязателен, и это не оптимизация.
+	 *
+	 * Дата, восстановленная из короткой памяти, в адресе не записана — а наблюдатель за
+	 * группой почти сразу дописывает туда ?group=…, и парный наблюдатель выше вычитывает
+	 * из обновлённого адреса состояние, где даты нет, то есть «сегодня». Восстановленная
+	 * неделя слетала бы через долю секунды после показа. Поэтому состояние уезжает в
+	 * адрес сразу: дальше обе стороны говорят об одном и том же.
+	 */
 	watch(filters, (state) =>
 	{
+		rememberAnchor(state.anchor);
+
 		if (serialize(fromQuery(route.query)) === serialize(state)) return;
 
 		/*
@@ -47,12 +62,43 @@ export function useFilterQuerySync (): Ref<FilterState>
 		 * group в запросе не трогаем — он принадлежит странице, а не фильтрам.
 		 */
 		void router.replace({ query: { ...toQuery(state), group: route.query.group } });
-	}, { deep: true });
+	}, { deep: true, immediate: true });
+
+	/*
+	 * Отметку времени обновляем при уходе со страницы, чтобы десять минут считались от
+	 * закрытия вкладки. pagehide, а не beforeunload: на мобильных браузерах второй
+	 * попросту не срабатывает, а перезагружают страницу чаще всего как раз там.
+	 */
+	function touch (): void
+	{
+		rememberAnchor(filters.value.anchor);
+	}
+
+	onMounted(() => window.addEventListener('pagehide', touch));
+	onUnmounted(() =>
+	{
+		window.removeEventListener('pagehide', touch);
+		touch();
+	});
 
 	return filters;
 }
 
 type Query = Record<string, unknown>;
+
+/**
+ * Состояние на момент открытия страницы.
+ *
+ * Порядок источников даты: ссылка → короткая память → сегодня. Присланная ссылка важнее
+ * памяти, иначе человек, которому скинули конкретную неделю, открыл бы свою собственную
+ * и решил, что ссылка не работает.
+ */
+function initialState (query: Query): FilterState
+{
+	const state = fromQuery(query);
+	if (!single(query.date)) state.anchor = recallAnchor() ?? today();
+	return state;
+}
 
 function fromQuery (query: Query): FilterState
 {
@@ -65,6 +111,11 @@ function fromQuery (query: Query): FilterState
 
 	const period = single(query.period);
 	if (period && PERIODS.includes(period as Period)) state.period = period as Period;
+
+	/* Дату проверяем по форме: из чужой ссылки сюда может прийти что угодно, а битая
+	   строка в dayjs даёт Invalid Date и пустую таблицу без единого объяснения. */
+	const date = single(query.date);
+	if (date && DATE_PATTERN.test(date)) state.anchor = date;
 
 	return state;
 }
@@ -79,6 +130,7 @@ function toQuery (state: FilterState): Query
 	if (state.teachers.length) query.teacher = state.teachers;
 	if (state.kinds.length) query.kind = state.kinds;
 	if (state.period !== 'week') query.period = state.period;
+	if (state.anchor !== today()) query.date = state.anchor;
 	if (state.onlyMine) query.mine = '1';
 
 	return query;
@@ -91,6 +143,7 @@ function serialize (state: FilterState): string
 		[ ...state.teachers ].sort(),
 		[ ...state.kinds ].sort(),
 		state.period,
+		state.anchor,
 		state.onlyMine,
 	]);
 }

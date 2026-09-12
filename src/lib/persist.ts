@@ -32,3 +32,15 @@ export function writeJson (key: string, value: unknown): void
 		// Квота или запрет на хранение: настройка не сохранится, но страница работает.
 	}
 }
+
+export function removeKey (key: string): void
+{
+	try
+	{
+		window.localStorage.removeItem(key);
+	}
+	catch
+	{
+		// См. выше: сам доступ к хранилищу бывает запрещён.
+	}
+}
