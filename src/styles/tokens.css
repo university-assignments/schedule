@@ -1,0 +1,85 @@
+/*
+ * Палитра. Единственный источник истины по цвету — произвольных значений в компонентах
+ * быть не должно: тёмная тема здесь не перекрашивает каждый класс через dark:, а
+ * переопределяет эти же переменные, и всё, что построено на них, переезжает само.
+ *
+ * Тема берётся из системы (prefers-color-scheme), переключателя нет намеренно: страницу
+ * открывают между парами с телефона, и лишняя кнопка в шапке дороже, чем выбор темы.
+ */
+:root {
+	--bg: #f6f7f9;
+	--surface: #ffffff;
+	--surface-soft: #f9fafb;
+	--line: #e6e8ec;
+	--line-soft: #f0f2f5;
+
+	--text: #16181d;
+	--body: #32363f;
+	--slate: #5b6270;
+	--muted: #8b93a3;
+
+	--accent: #4f46e5;
+	--accent-ink: #4338ca;
+	--accent-wash: rgba(79, 70, 229, 0.08);
+	--accent-line: rgba(79, 70, 229, 0.22);
+
+	/* Типы занятий. Цвет здесь несёт смысл, поэтому он же используется и в легенде,
+	   и в чипах фильтра, и в полоске слева у карточки. */
+	--lecture: #4f46e5;
+	--practice: #0d9488;
+	--lab: #b45309;
+	--exam: #be123c;
+	--other: #64748b;
+
+	/* Виды правок в журнале изменений. */
+	--added: #047857;
+	--added-wash: rgba(4, 120, 87, 0.1);
+	--removed: #be123c;
+	--removed-wash: rgba(190, 18, 60, 0.09);
+	--moved: #b45309;
+	--moved-wash: rgba(180, 83, 9, 0.1);
+
+	--radius: 14px;
+	--shadow:
+		0 1px 2px rgba(16, 18, 23, 0.04),
+		0 8px 24px -18px rgba(16, 18, 23, 0.18);
+
+	--f-sans: 'Inter Variable', system-ui, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #0e1014;
+		--surface: #161920;
+		--surface-soft: #1b1f27;
+		--line: #262b35;
+		--line-soft: #1f242c;
+
+		--text: #f2f4f8;
+		--body: #d7dbe3;
+		--slate: #99a1b0;
+		--muted: #6e7688;
+
+		--accent: #818cf8;
+		--accent-ink: #a5b4fc;
+		--accent-wash: rgba(129, 140, 248, 0.12);
+		--accent-line: rgba(129, 140, 248, 0.28);
+
+		--lecture: #818cf8;
+		--practice: #2dd4bf;
+		--lab: #fbbf24;
+		--exam: #fb7185;
+		--other: #94a3b8;
+
+		--added: #34d399;
+		--added-wash: rgba(52, 211, 153, 0.12);
+		--removed: #fb7185;
+		--removed-wash: rgba(251, 113, 133, 0.12);
+		--moved: #fbbf24;
+		--moved-wash: rgba(251, 191, 36, 0.12);
+
+		--shadow:
+			0 1px 2px rgba(0, 0, 0, 0.4),
+			0 8px 24px -18px rgba(0, 0, 0, 0.8);
+	}
+}

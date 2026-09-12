@@ -1,0 +1,9 @@
+# Разрешаем postinstall-скрипты только доверенным пакетам (pnpm 10+ блокирует их
+# по умолчанию). esbuild — нативный бинарник для vite, vue-demi — переключение на Vue 3.
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+
+# Не запускать install-проверку перед каждым pnpm-скриптом
+# (иначе «ignored build scripts» эскалируется в ошибку и ломает pnpm build/dev).
+verifyDepsBeforeRun: false

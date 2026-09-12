@@ -1,0 +1,73 @@
+name: Fetch schedule
+
+# Каждые три часа в течение учебного дня по Челябинску (UTC+5): 08:00, 11:00, 14:00,
+# 17:00, 20:00. Раз в сутки мало — правки в расписании появляются за день до пары,
+# и сутки задержки означают, что человек узнает о переносе уже после него.
+#
+# Ночью не ходим: деканат ночью не правит, а лишние прогоны — это лишние минуты Actions.
+on:
+  schedule:
+    - cron: '0 3,6,9,12,15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Два прогона разом писали бы в один и тот же журнал изменений и разошлись бы при пуше.
+concurrency:
+  group: fetch
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Выгрузить расписание
+        env:
+          # Разовый токен для ручного запуска; для cron нужны логин с паролем —
+          # JWT живёт около суток и в секретах протухает на второй день.
+          SUSU_TOKEN: ${{ secrets.SUSU_TOKEN }}
+          SUSU_LOGIN: ${{ secrets.SUSU_LOGIN }}
+          SUSU_PASSWORD: ${{ secrets.SUSU_PASSWORD }}
+          SUSU_AUTH_URL: ${{ secrets.SUSU_AUTH_URL }}
+        run: python scripts/fetch_schedule.py
+
+      - name: Закоммитить, если что-то изменилось
+        id: commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add public/data
+
+          # Решает git, а не код возврата скрипта: отдельный код «изменений нет» не
+          # отличить от единицы упавшего запроса, и сломанный cron выглядел бы как
+          # обычное затишье в расписании.
+          if git diff --cached --quiet; then
+            echo 'changed=false' >> "$GITHUB_OUTPUT"
+            echo 'Изменений нет.'
+          else
+            git commit -m 'data: обновление расписания'
+            git push
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+
+  # Публикуем только когда есть что публиковать: пересобирать одну и ту же страницу
+  # пять раз в день незачем.
+  deploy:
+    needs: fetch
+    if: needs.fetch.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write

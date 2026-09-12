@@ -1,0 +1,26 @@
+# Logs
+*.log
+pnpm-debug.log*
+
+node_modules
+dist
+dist-ssr
+coverage
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.sw?
+
+*.tsbuildinfo
+.eslintcache
+
+# Vite
+*.timestamp-*-*.mjs
+
+# Python (scripts/)
+__pycache__/
+*.pyc
+.venv/
