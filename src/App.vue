@@ -11,7 +11,7 @@ import { provideAppData } from '@/composables/useAppData';
  */
 provideAppData();
 
-const REPO = 'https://github.com/nvd05/schedule';
+const REPO = 'https://github.com/university-assignments/schedule';
 </script>
 
 <template>
