@@ -17,7 +17,7 @@ import type { LessonKind } from '@/lib/lesson';
  * а не улетает со страницы.
  */
 
-const PERIODS: Period[] = [ 'week', 'next', 'month', 'all' ];
+const PERIODS: Period[] = [ 'week', 'next', 'month', 'custom', 'all' ];
 const KINDS: LessonKind[] = [ 'lecture', 'practice', 'lab', 'exam', 'other' ];
 
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
@@ -112,10 +112,13 @@ function fromQuery (query: Query): FilterState
 	const period = single(query.period);
 	if (period && PERIODS.includes(period as Period)) state.period = period as Period;
 
-	/* Дату проверяем по форме: из чужой ссылки сюда может прийти что угодно, а битая
+	/* Даты проверяем по форме: из чужой ссылки сюда может прийти что угодно, а битая
 	   строка в dayjs даёт Invalid Date и пустую таблицу без единого объяснения. */
 	const date = single(query.date);
 	if (date && DATE_PATTERN.test(date)) state.anchor = date;
+
+	state.from = validDate(query.from) ?? '';
+	state.to = validDate(query.to) ?? '';
 
 	return state;
 }
@@ -131,6 +134,12 @@ function toQuery (state: FilterState): Query
 	if (state.kinds.length) query.kind = state.kinds;
 	if (state.period !== 'week') query.period = state.period;
 	if (state.anchor !== today()) query.date = state.anchor;
+
+	/* Границы своего диапазона возим в адресе всегда, когда заданы, — даже если сейчас
+	   выбран другой период: вернувшись на «Свой», человек находит их на месте, а не
+	   набирает заново. */
+	if (state.from) query.from = state.from;
+	if (state.to) query.to = state.to;
 	if (state.onlyMine) query.mine = '1';
 
 	return query;
@@ -144,8 +153,16 @@ function serialize (state: FilterState): string
 		[ ...state.kinds ].sort(),
 		state.period,
 		state.anchor,
+		state.from,
+		state.to,
 		state.onlyMine,
 	]);
+}
+
+function validDate (value: unknown): string | undefined
+{
+	const date = single(value);
+	return date && DATE_PATTERN.test(date) ? date : undefined;
 }
 
 function single (value: unknown): string | undefined

@@ -6,7 +6,7 @@ import ToggleSwitch from '@/components/ui/ToggleSwitch.vue';
 import TeacherFilter from '@/components/schedule/TeacherFilter.vue';
 import ColumnMenu from '@/components/schedule/ColumnMenu.vue';
 import PeriodNav from '@/components/schedule/PeriodNav.vue';
-import { emptyFilters, isDefaultFilters, PERIOD_LABELS, type FilterState, type Period } from '@/lib/filters';
+import { emptyFilters, isDefaultFilters, periodRange, PERIOD_LABELS, type FilterState, type Period } from '@/lib/filters';
 import { KIND_LABELS, type LessonKind } from '@/lib/lesson';
 
 const filters = defineModel<FilterState>({ required: true });
@@ -17,6 +17,9 @@ const props = defineProps<{
 	hasMySubjects: boolean;
 	/** Показывать ли меню колонок: в карточном виде на телефоне колонок нет. */
 	showColumns: boolean;
+	/** Границы имеющихся данных — ими ограничен календарь своего диапазона. */
+	minDate?: string;
+	maxDate?: string;
 }>();
 
 const PERIODS = Object.keys(PERIOD_LABELS) as Period[];
@@ -46,12 +49,21 @@ function toggleKind (kind: LessonKind): void
    «Месяц» — он ждёт октябрь целиком, а не прыжка в текущий месяц. */
 function setPeriod (period: Period): void
 {
-	filters.value = { ...filters.value, period };
-}
+	/*
+	 * Переход в свой диапазон подставляет то, что человек видит прямо сейчас.
+	 *
+	 * Пустые поля означали бы «всё», и таблица при переключении дёрнулась бы с недели на
+	 * весь семестр — а человек нажал «Свой», чтобы уточнить показанное, а не расширить.
+	 * Дальше он правит одну границу, а не набирает обе с нуля.
+	 */
+	if (period === 'custom' && !filters.value.from && !filters.value.to)
+	{
+		const range = periodRange(filters.value);
+		filters.value = { ...filters.value, period, from: range?.from ?? '', to: range?.to ?? '' };
+		return;
+	}
 
-function setAnchor (anchor: string): void
-{
-	filters.value = { ...filters.value, anchor };
+	filters.value = { ...filters.value, period };
 }
 
 const searchModel = computed({
@@ -85,11 +97,12 @@ const onlyMineModel = computed({
 		     идут ниже: смешивать перемещение по времени с отбором значит заставлять
 		     каждый раз выискивать стрелки среди семи одинаковых кнопок. -->
 		<div class="flex flex-wrap items-center gap-2">
-			<PeriodNav :period="filters.period" :anchor="filters.anchor" @update:anchor="setAnchor" />
+			<PeriodNav v-model="filters" :min="props.minDate" :max="props.maxDate" />
 
 			<div class="ml-auto flex items-center gap-2">
-				<!-- Период — сегментированный переключатель: вариантов четыре, они
-				     взаимоисключающие, и один из них выбран всегда. -->
+				<!-- Период — сегментированный переключатель: варианты взаимоисключающие,
+				     и один из них выбран всегда. «Свой» меняет не только границы, но и вид
+				     листалки слева — стрелки уступают место двум полям дат. -->
 				<div class="flex gap-0.5 rounded-lg bg-line-soft p-0.5">
 					<button
 						v-for="period in PERIODS"

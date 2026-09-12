@@ -41,13 +41,24 @@ const changedKeys = computed(() => keysChangedInLatestRun(changes.value));
    альбомной ориентации таблица помещается целиком и читается лучше. */
 const isWide = useMediaQuery('(min-width: 768px)');
 
+/*
+ * Границы дампа — ими ограничен календарь своего диапазона. Расписание кончается 23
+ * декабря, и листать в нём март значит выбирать заведомо пустой отрезок.
+ *
+ * Считаем по всем занятиям, а не по отфильтрованным: сузив выбор до одного преподавателя,
+ * человек не должен терять возможность заглянуть в декабрь.
+ */
+const dataFrom = computed(() => lessons.value[0]?.date);
+const dataTo = computed(() => lessons.value.at(-1)?.date);
+
 const emptyHint = computed(() =>
 {
 	if (!lessons.value.length) return 'Дамп расписания для этой группы ещё не выгружен.';
+	/* Пустой промежуток — обычное дело (каникулы, сессия), и подсказка должна вести к
+	   тому органу управления, которым его и выбрали: к полям дат или к стрелкам. */
+	if (filters.value.period === 'custom') return 'В выбранном промежутке занятий нет — измените даты.';
 	if (!isDefaultFilters(filters.value)) return 'Под фильтры ничего не подошло — попробуйте сбросить их или расширить период.';
 
-	/* Пустая неделя при нетронутых фильтрах — обычное дело (каникулы, сессия), и
-	   подсказка должна вести к стрелкам, а не намекать на поломку. */
 	return 'На этой неделе занятий нет — полистайте стрелками или переключите период.';
 });
 </script>
@@ -59,6 +70,8 @@ const emptyHint = computed(() =>
 			:teachers="teachers"
 			:has-my-subjects="mySubjects.length > 0"
 			:show-columns="isWide"
+			:min-date="dataFrom"
+			:max-date="dataTo"
 		/>
 
 		<ErrorState v-if="error" :error="error" @retry="refetch" />

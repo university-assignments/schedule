@@ -24,7 +24,13 @@ import {
  * Бонус: те же функции применяются к списку изменений, где таблицы нет вовсе.
  */
 
-export type Period = 'week' | 'next' | 'month' | 'all';
+export type Period = 'week' | 'next' | 'month' | 'custom' | 'all';
+
+/* Границы «без границы». Пустое поле в своём диапазоне означает «и дальше» либо
+   «и раньше» — половинка периода это законный запрос («что осталось до Нового года»),
+   а не недозаполненная форма. */
+const FAR_PAST = '0000-01-01';
+const FAR_FUTURE = '9999-12-31';
 
 export interface FilterState
 {
@@ -40,13 +46,16 @@ export interface FilterState
 	 * человека в текущий месяц: он смотрел октябрь — пусть увидит октябрь целиком.
 	 */
 	anchor: string;
+	/** Границы своего диапазона (period: 'custom'). Пустая строка — сторона не задана. */
+	from: string;
+	to: string;
 	/** Показывать только предметы, отмеченные в «Мои пары». */
 	onlyMine: boolean;
 }
 
 export function emptyFilters (anchor: string = today()): FilterState
 {
-	return { search: '', teachers: [], kinds: [], period: 'week', anchor, onlyMine: false };
+	return { search: '', teachers: [], kinds: [], period: 'week', anchor, from: '', to: '', onlyMine: false };
 }
 
 /*
@@ -71,8 +80,11 @@ export interface PeriodRange
 	to: string;
 }
 
-export function periodRange (period: Period, anchor: string): PeriodRange | null
+/** Что именно показывать. `null` — без ограничения по датам. */
+export function periodRange (state: FilterState): PeriodRange | null
 {
+	const { period, anchor } = state;
+
 	switch (period)
 	{
 		case 'week':
@@ -81,9 +93,25 @@ export function periodRange (period: Period, anchor: string): PeriodRange | null
 			return { from: startOfWeek(anchor), to: endOfWeek(addDays(anchor, 7)) };
 		case 'month':
 			return { from: startOfMonth(anchor), to: endOfMonth(anchor) };
+		case 'custom':
+			return customRange(state);
 		case 'all':
 			return null;
 	}
+}
+
+function customRange (state: FilterState): PeriodRange | null
+{
+	if (!state.from && !state.to) return null;
+
+	const from = state.from || FAR_PAST;
+	const to = state.to || FAR_FUTURE;
+
+	/* Перевёрнутый диапазон разворачиваем, а не показываем пустую таблицу. Ввести его
+	   проще простого: человек сдвигает начало за уже выбранный конец, и промежуточное
+	   состояние формы — законное. Ругаться на него значит требовать заполнять поля в
+	   «правильном» порядке. */
+	return from <= to ? { from, to } : { from: to, to: from };
 }
 
 /** Шаг стрелок «‹ ›» — ровно та единица, которой меряется текущий период. */
@@ -97,24 +125,31 @@ export function shiftAnchor (period: Period, anchor: string, direction: -1 | 1):
 			return addWeeks(anchor, direction * 2);
 		case 'month':
 			return addMonths(anchor, direction);
+		case 'custom':
 		case 'all':
 			return anchor;
 	}
 }
 
-/** Подпись между стрелками: «7–13 сент.», «Сентябрь». */
-export function rangeLabel (period: Period, anchor: string): string
+/** Листается ли период стрелками: у своего диапазона и у «Всё» шага нет. */
+export function isSteppable (period: Period): boolean
 {
-	if (period === 'month') return formatMonth(anchor);
+	return period !== 'all' && period !== 'custom';
+}
 
-	const range = periodRange(period, anchor);
+/** Подпись между стрелками: «7–13 сент.», «Сентябрь». */
+export function rangeLabel (state: FilterState): string
+{
+	if (state.period === 'month') return formatMonth(state.anchor);
+
+	const range = periodRange(state);
 	return range ? formatRange(range.from, range.to) : '';
 }
 
 /** Попадает ли сегодняшний день в показанный период — по этому прячется «Сегодня». */
-export function coversToday (period: Period, anchor: string): boolean
+export function coversToday (state: FilterState): boolean
 {
-	const range = periodRange(period, anchor);
+	const range = periodRange(state);
 	if (!range) return true;
 
 	const now = today();
@@ -125,6 +160,7 @@ export const PERIOD_LABELS: Record<Period, string> = {
 	week: 'Неделя',
 	next: 'Две недели',
 	month: 'Месяц',
+	custom: 'Свой',
 	all: 'Всё',
 };
 
@@ -139,7 +175,7 @@ export const PERIOD_LABELS: Record<Period, string> = {
 export function applyFilters (lessons: Lesson[], state: FilterState, mySubjects: string[]): Lesson[]
 {
 	const needle = state.search.trim().toLowerCase();
-	const range = periodRange(state.period, state.anchor);
+	const range = periodRange(state);
 	const mine = new Set(mySubjects);
 
 	return lessons.filter((lesson) =>
